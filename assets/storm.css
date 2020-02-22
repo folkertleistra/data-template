@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+body {
+    margin: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F7F8F9;
+}
+
+.mainContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.dashboard-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: solid black 1px ;
+}
+
+.dashboard-header .title-box {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%
+}
+
+.dashboard-header .title-box #title  {
+    font-family: 'Rubik', sans-serif;
+    font-size: 43px;
+}
+
+.dashboard-header .title-box #subtitle {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.dashboard-header .SD-logo {
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+
+.dashboard-header .SD-logo img {
+    width: 50%;
+    height: auto;
+}
+
+#dashboard-tabs {
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+#dashboard-tabs a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    width: 16%;
+}
+
+#dashboard-tabs a:hover {
+    color: #7FD3B7;
+}
+
+#dashboard-tabs a:not(:last-child) {
+    border-left: solid gray 2px
+}
+
+.main-content {
+    background-color: #F7F8F9;
+    width: 87%;
+    margin: auto;
+}
+
+
+
+/* Attribution tab styling */
+
+.matrices-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+#prob-matrix-plot, #sankey-plot {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dash-sk-circle .dash-sk-child {
+    margin-top: 200px;
+}
+
+#trans-channels, #times-channels {
+    width: 70%;
+}
+
+.Select-multi-value-wrapper {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.Select-value {
+    height: 25px;
+}
+
+#time-series-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+/*  SLIDERS TAB STYLING */
+#top-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left-section{
+    width: 48%;
+    margin-left: 1%;
+}
+
+#budget-box-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top: 2%;
+}
+
+#budget-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#budget-box-section1, #budget-box-section2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#budget-box-section2 input {
+    height: 40px;
+    margin-top: 5px;
+}
+
+#sliders-menu-top {
+    display: flex;
+    flex-direction: column;
+}
+
+#sliders-menu-top p  {
+    margin: 0;
+}
+
+#slider-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.channels-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.channel-sliders {
+    width: 20%;
+}
+
+.channel-names > p {
+    height: 70px;
+}
+
+.channel-sliders > div, .channels-abs > div, .channels-per > div {
+    height: 70px;
+}
+
+#prob-matrix-plot .plot-container .svg-container {
+    height: 650px !important;
+}
